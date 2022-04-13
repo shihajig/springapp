@@ -9,6 +9,16 @@ pipeline{
  	   }
  	 
  	 } 
+ 	 
+ 	 stage('Build docker image'){
+ 	   steps{
+ 	   		bat 'docker build -t shihaji/springapp:latest .'
+ 	   
+ 	   }
+ 	 
+ 	 } 
+ 	 
+ 	 
     }
 
 
