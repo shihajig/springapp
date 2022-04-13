@@ -32,6 +32,18 @@ pipeline{
  	 } 
  	 
  	 
+ 	 stage('docker push'){
+ 	 
+ 	 	steps{
+ 	 	
+ 	 	  bat 'docker push shihaji/springapp:latest'
+ 	 	  
+ 	 	  
+ 	 	}
+ 	 
+ 	 }
+ 	 
+ 	 
     }
 
 
